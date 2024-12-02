@@ -1,0 +1,19 @@
+.navbar{
+    width: 100%;
+    background-color: #111;
+}
+
+.container-menu{
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
+    justify-content: center;
+}
+
+.item-menu{
+
+    list-style: none;
+    color: #fff;
+
+}
