@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-// Defina a URL base da sua API
-const BASE_URL = 'https://backend-teste-1.onrender.com/author'; // Substitua pelo seu URL da API
+
+const BASE_URL = 'https://backend-teste-1.onrender.com/author';
 
 @Injectable({
   providedIn: 'root'
