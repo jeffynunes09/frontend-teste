@@ -23,6 +23,7 @@
 
     list-style: none;
     color: #fff;
+    cursor: pointer;
 
 }
 
@@ -30,4 +31,10 @@ footer{
 
     background-color: #111;
     height: 30%;
+    color: #fff;
+}
+
+A{
+    text-decoration: none;
+    color: #fff;
 }

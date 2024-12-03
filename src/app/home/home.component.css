@@ -4,9 +4,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .title{
 
     font-size: 60px;
+    width:700px;
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    margin-top: 80px;
+    cursor: pointer;
 }
