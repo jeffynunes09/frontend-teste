@@ -32,11 +32,15 @@
 footer{
 
     background-color: #111;
-    height: 30%;
+    height: 20%;
     color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-A{
+a{
     text-decoration: none;
     color: #fff;
 }

@@ -1,23 +1,40 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { AuthorService } from '../../services/author.service';
 
 @Component({
   selector: 'app-form-author',
-  standalone:true,
+  standalone: true,
   imports: [FormsModule],
   templateUrl: './form-author.component.html',
-  styleUrl: './form-author.component.css'
+  styleUrls: ['./form-author.component.css']
 })
 export class FormAuthorComponent {
-
-  constructor( private router:Router){}
   name?: string;
-  birthDate?: Date;
-onSubmit() {
+  birthDate?: string;  
 
-  this.router.navigate(['createdbooks'])
-}
+  constructor(private router: Router, private authorService: AuthorService) {}
 
-
+  onSubmit() {
+    if (!this.name || !this.birthDate) {
+      console.error("Os campos Nome e Data de Nascimento são obrigatórios.");
+      return; 
+    }
+  
+    const authorData = {
+      name: this.name || "",       
+      birthDate: this.birthDate || "" 
+    };
+  
+    this.authorService.createAuthor(authorData).subscribe({
+      next: (response) => {
+        console.log('Autor criado com sucesso:', response);
+        this.router.navigate(['createdbooks']);
+      },
+      error: (error) => {
+        console.error('Erro ao criar autor:', error);
+      }
+    });
+  }
 }
