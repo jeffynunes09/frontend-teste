@@ -1,0 +1,19 @@
+
+<div class="container">
+   
+    <form action="" class="container-form">
+        <div class="container-label">
+            <label for="">Titulo</label>
+            <input type="text" [(ngModel)]="title">
+        </div>
+        <div class="container-label">
+            <label for="">Data de Publicação</label>
+            <input type="date" [(ngModel)]="post">
+        </div>
+        <div class="container-label">
+            <label for="">Autor</label>
+            <input type="text" [(ngModel)]="author">
+        </div>
+        <button (click)="onSubmit()">Enviar</button>
+    </form>
+</div>

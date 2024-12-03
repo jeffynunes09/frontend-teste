@@ -1,21 +1,20 @@
 import { Component } from '@angular/core';
-import { FormComponent } from "../form/form.component";
 import { Router } from '@angular/router';
-
+import { RouterModule } from '@angular/router'; // Adicionar a importação do RouterModule
 
 @Component({
   selector: 'app-home',
-  imports: [FormComponent],
+  standalone: true,  
+  imports: [RouterModule],  
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
 
-  constructor(private router:Router){}
-addBooks() {
-  
-  this.router.navigate(["/add/authors"])
-  
-}
+  constructor(private router: Router) { }
 
+  addBooks() {
+ 
+    this.router.navigate(['createdauthor']);
+  }
 }

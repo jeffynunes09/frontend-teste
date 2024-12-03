@@ -1,0 +1,15 @@
+
+<div class="container">
+   
+    <form action="" class="container-form">
+        <div class="container-label">
+            <label for="">Nome</label>
+            <input type="text" [(ngModel)]="name">
+        </div>
+        <div class="container-label">
+            <label for="">Data de Nascimento</label>
+            <input type="date" [(ngModel)]="birthDate">
+        </div>
+        <button (click)="onSubmit()">Enviar</button>
+    </form>
+</div>
