@@ -3,6 +3,7 @@ import { AuthorListComponent } from './author-list/author-list.component';  // C
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { BookListComponent } from './book-list/book-list.component';
+import { AddAuthorsComponent } from './add-authors/add-authors.component';
 
 // Definição das rotas
 export const routes: Routes = [
@@ -15,6 +16,9 @@ export const routes: Routes = [
   },
   {
     path:"authors", component:AuthorListComponent
+  },
+  {
+    path:"add/authors", component:AddAuthorsComponent
   }
 ];
 

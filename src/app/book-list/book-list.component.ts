@@ -8,10 +8,6 @@ import { FormComponent } from "../form/form.component";
   styleUrl: './book-list.component.css'
 })
 export class BookListComponent {
-  fields = [
-    { label: 'Titulo', type: 'text', placeholder: 'Digite o titulo do livro' },
-    { label: 'Data de lançamento', type: 'date' },
-    { label: 'Autor', type: 'select' }
-  ];
+
 
 }

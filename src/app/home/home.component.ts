@@ -14,7 +14,7 @@ export class HomeComponent {
   constructor(private router:Router){}
 addBooks() {
   
-  this.router.navigate(["/authors"])
+  this.router.navigate(["/add/authors"])
   
 }
 
