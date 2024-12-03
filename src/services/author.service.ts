@@ -3,7 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 
-const BASE_URL = 'https://backend-teste-1.onrender.com/author';
+
+
+const BASE_URL = 'https://backend-teste-13hy.onrender.com/author';
 
 @Injectable({
   providedIn: 'root'
