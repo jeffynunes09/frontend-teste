@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormComponent } from "../form/form.component";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -8,5 +10,12 @@ import { FormComponent } from "../form/form.component";
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  imageUrl: string = 'assets/header.jpg';
+
+  constructor(private router:Router){}
+addBooks() {
+  
+  this.router.navigate(["/authors"])
+  
+}
+
 }

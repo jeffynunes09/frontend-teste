@@ -15,12 +15,11 @@
 }
 
 button{
-    padding: 10px;
-    width: 150px;
+    width: 200px;
+    height: 50px;
     border-radius: 10px;
-    border: none;
     background-color: #111;
     color: #fff;
-    margin-top: 80px;
+    border: none;
     cursor: pointer;
 }
