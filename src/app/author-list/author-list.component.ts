@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { FormComponent } from "../form/form.component";  
+
 
 @Component({
   selector: 'app-author-list',
   standalone: true,
-  imports: [FormComponent], 
+  imports: [], 
   templateUrl: './author-list.component.html',
   styleUrls: ['./author-list.component.css']
 })
